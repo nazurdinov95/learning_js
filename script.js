@@ -1,10 +1,6 @@
-let summar = [10, 12, 14];
+let num = [123];
 
-  let numberSum =(arr) => {
-  let arrSum = 0;
-  for (let i = 0; i < arr.length; ++i) {
-    arr[i] = eval(summar.toString().split('').join('+'));
-    arrSum += arr[i];
-  }
-  console.log(numberSum(summar));
-};
+sum =num.toString().split('').map(Number).reduce(function (a, b) {
+      return a + b;
+    }, );
+console.log(sum);
