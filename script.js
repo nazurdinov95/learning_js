@@ -1,8 +1,9 @@
+let num = [123, 2, 104];
+let sum = 0;
 
-let num = [123, 2];
-
-const sum = num => num.toString().split('').map(Number)
-    .reduce((res, el) => res + (Array.isArray(el) ? sum(el) : el), );
-
-console.log(sum(num));
+for (let i = 0; i < num.length; i++) {
+  sum += num[i].toString().split('').map(Number)
+      .reduce((res, el) => res + el,);
+}
+console.log(sum);
 
