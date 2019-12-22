@@ -1,6 +1,8 @@
 let num = [123, 2, 104];
 let sum = 0;
 
-num.toString().split('').map(Number).forEach((number) => sum += number);
+num.forEach(num => {
+  sum += num.toString().split('').map(Number).reduce((res, el) => res + el);
+});
 
 console.log(sum);
