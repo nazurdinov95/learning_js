@@ -6,6 +6,7 @@ strings.forEach((elem) => {
 });
 console.log(sum);
 
+//sum length element
 let stringArry = ['Hello', 'World'];
 
 let sumStr = 0;
@@ -13,3 +14,10 @@ for (let i = 0; i < stringArry.length; i++) {
   sumStr += stringArry[i].length;
 }
 console.log(sumStr);
+
+//length every element
+let fruits = ["яблоко", "банан"];
+
+for (let i = 0; i < fruits.length; i++)
+
+  console.log(fruits[i].length);
