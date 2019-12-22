@@ -1,8 +1,7 @@
-let num = [123, 2, 104];
+let strings = ['Amr', 'Jimmy'];
 let sum = 0;
 
-num.forEach(num => {
-  sum += num.toString().split('').map(Number).reduce((res, el) => res + el);
+strings.forEach(function(elem) {
+  sum += elem.length;
 });
-
 console.log(sum);
