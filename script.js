@@ -2,7 +2,7 @@ let strings = ['Amr', 'Jimmy'];
 let sum = 0;
 
 strings.forEach((elem) => {
-  sum += elem.length;
+  sum += (elem.length);
 });
 console.log(sum);
 
@@ -16,8 +16,8 @@ for (let i = 0; i < stringArry.length; i++) {
 console.log(sumStr);
 
 //length every element
-let fruits = ["яблоко", "банан"];
+const emotions = ['happy', 'sad', 'angry'];
+let arr = [];
+emotions.forEach(emotion => (arr.push(emotion.length)));
 
-for (let i = 0; i < fruits.length; i++)
-
-  console.log(fruits[i].length);
+console.log(arr);
