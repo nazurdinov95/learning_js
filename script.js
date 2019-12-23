@@ -1,31 +1,13 @@
-//sum all of elements array
-let strings = ['Amr', 'Jimmy'];
-let sum = 0;
 
-strings.forEach((elem) => {
-  sum += (elem.length);
-});
-console.log(sum);
+let numArray = [5, 3, 6, 9, 15, -1];
 
-//sum all of elements array
-let stringArry = ['Hello', 'World'];
+let sumArray =0;
 
-let sumStr = 0;
-for (let i = 0; i < stringArry.length; i++) {
-  sumStr += stringArry[i].length;
-}
-console.log(sumStr);
+  numArray.forEach((num) => sumArray +=num);
 
-//length every element
-const emotions = ['happy', 'sad', 'angry'];
-let arr = [];
-emotions.forEach(emotion => arr.push(emotion.length));
+  let max = Math.max.apply(null, numArray);
+  let min = Math.min.apply(null,numArray);
+  let sumMinMax = max + min;
+    sumArray -= sumMinMax;
 
-console.log(arr);
-
-//length every element array method map
-let stringsArr2 = ['Hi', 'jimmy'];
-
-let lengthStr = stringsArr2.map(num => num.length);
-
-console.log(lengthStr);
+  console.log(sumArray);
