@@ -10,4 +10,5 @@ let sumArray =0;
   let sumMinMax = max + min;
     sumArray -= sumMinMax;
 
+
   console.log(sumArray);
