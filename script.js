@@ -1,5 +1,5 @@
 
-let numArray = [5, 3, 6, 9, 15, -1];
+let numArray = [1, 4, 6, 7, 1, 0, -3, 0, 1, 2, 34, 5, 49];
 
 let sumArray =0;
 
