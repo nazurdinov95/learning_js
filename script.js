@@ -22,9 +22,10 @@ let arr = [];
 emotions.forEach(emotion => arr.push(emotion.length));
 
 console.log(arr);
+
 //length every element array method map
 let stringsArr2 = ['Hi', 'jimmy'];
-let lengthStr = stringsArr2.map(num => {
-  return num.length;
-});
+
+let lengthStr = stringsArr2.map(num => num.length);
+
 console.log(lengthStr);
