@@ -5,14 +5,13 @@ const max = Math.max.apply(null, numArray);
 
 const indexMin = numArray.indexOf(min);
 const indexMax = numArray.indexOf(max);
-
+let removed;
 if (indexMax < indexMin) {
-  let removed2 = numArray.slice(indexMax, indexMin);
-  let result = removed2.reduce((sum, num) => sum + num, 0);
-  console.log(result - max);
+  removed = numArray.slice(indexMax+1, indexMin);
 } else {
-  const removed = numArray.slice(indexMin, indexMax);
-  let sumArray = removed.reduce((sum,num) => sum + num);
-
-  console.log(sumArray - min);
+  removed = numArray.slice(indexMin, indexMax);
 }
+
+let sumArray = removed.reduce((sum,num) => sum + num);
+
+console.log(sumArray);
