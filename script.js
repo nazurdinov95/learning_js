@@ -13,5 +13,5 @@ numArray[indexMax] = startIn;
 
 console.log(numArray);
 //find two min numbers
-resault = numArray.sort((firstNum,secondNum) => firstNum - secondNum).slice(0, 2);
-console.log(resault);
+result = numArray.sort((firstNum,secondNum) => firstNum - secondNum).slice(0, 2);
+console.log(result);
