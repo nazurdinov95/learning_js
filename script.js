@@ -1,17 +1,5 @@
-let numArray = [49, 1, 4, 6, 7, 1, 0, -3, 0, 1, 2, 34, 5];
+let numbers = [12, 5, 1, 3, 1];
 
-const minNum = Math.min(... numArray);
-const maxNum = Math.max(... numArray);
+    unique = numbers.filter((v, i) => numbers.indexOf(v) === numbers.lastIndexOf(v));
 
-const indexMin = numArray.indexOf(minNum);
-const indexMax = numArray.indexOf(maxNum);
-
-let startIn = numArray[indexMin];
-
-numArray[indexMin] = numArray[indexMax];
-numArray[indexMax] = startIn;
-
-console.log(numArray);
-//find two min numbers
-result = numArray.sort((firstNum,secondNum) => firstNum - secondNum).slice(0, 2);
-console.log(result);
+console.log(unique);
