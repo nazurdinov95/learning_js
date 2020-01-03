@@ -1,5 +1,5 @@
-const numbers = [12, 5, 1, 3, 1];
+const numbers = [12, 5, 1, 3, 1, 10, 6, 5];
 
-unique = numbers.filter((v, i) => numbers.indexOf(v) === numbers.lastIndexOf(v));
+nonUnique = numbers.filter((v, i) => numbers.indexOf(v) !== numbers.lastIndexOf(v));
 
-console.log(unique);
+console.log(nonUnique);
