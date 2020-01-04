@@ -1,5 +1,7 @@
-const numbers = [12, 5, 1, 3, 1, 10, 6, 5];
-
-nonUnique = numbers.filter((v, i) => numbers.indexOf(v) !== numbers.lastIndexOf(v));
-
-console.log(nonUnique);
+const numbers = [3, 6, 20, 99, 10, 15];
+const median = arr => {
+  const mid = Math.floor(arr.length / 2),
+      nums = [...arr].sort((a, b) => a - b);
+  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+};
+console.log(median(numbers));
